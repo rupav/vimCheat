@@ -146,3 +146,36 @@ readme instruction format:
 ---------
 **jump paragraphs:**
 * {}
+---------
+**Store in register:**![#f03c15](https://placehold.it/15/f03c15/000000?text=+)
+* "[a]yy  # 'a' is register name, yy is yank the whole line into the register
+* "[a]p  # to paste anywhere the stored value in register a
+* Ctrl-R [a]  # **in insert mode**, use ctrl-r to indicate putting register value!
+---------
+**Last inserted text:**![#f03c15](https://placehold.it/15/f03c15/000000?text=+)
+* Ctrl-a  # **in insert mode.**
+---------
+**Autocompletion words:(context-aware)**![#f03c15](https://placehold.it/15/f03c15/000000?text=+)
+* Ctrl-p  # in insert mode
+* Ctrl-n  # in insert mode
+---------
+**Autocompletion line:(context-aware)**![#f03c15](https://placehold.it/15/f03c15/000000?text=+)
+* Ctrl-x Ctrl-l  # **works in insert mode only**
+---------
+**Go to C-Tag:**![#f03c15](https://placehold.it/15/f03c15/000000?text=+)
+* Ctrl-]
+* Ctrl-x Ctrl-]  # **in insert mode**, autocomplete the c-tag, instead of using Ctrl-p
+--------
+**File completion:**![#f03c15](https://placehold.it/15/f03c15/000000?text=+)
+* Ctrl-x  # **in insert mode**, to enter special completion mode
+* Ctrl-f  # to complete the file name (current or in the directory)
+--------
+**Open a new file:**![#f03c15](https://placehold.it/15/f03c15/000000?text=+)
+* :e '<file_name>'
+--------
+
+**Credits:**
+
+<br/>
+
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [Autocompletion mode](http://georgebrock.github.io/talks/vim-completion/)
