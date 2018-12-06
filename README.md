@@ -1,3 +1,6 @@
+This repo is not for setting up vimrc, instead for starting with VIM.
+Commands that I have discovered and found quite useful so far through youtube tutorials, vimtutor, awesome vim are all shared here. Commands list will soon go beyond infinity! :rocket:
+
 quit:
 * q!
 
@@ -96,3 +99,38 @@ Screen movement, withough affecting cursor: (Shifting screen)
 * Ctr-[D/U]  # jump half the screen
 * CTR-[F/B]  # jump full screen
 
+Find next word currently cursor at:
+* *
+* #  # previous
+
+Find next character:
+* f[x]  # find next first x character
+* ;  # find net x
+* ,  # find last x
+
+Mark:
+* mm  # or m[any register]
+* `m  # return to where mark was set.
+* 'm  # return to start of line where mark was set.
+
+Special delete/change:
+* [d/c]f[x]  # delete/change/replace till first x found and delete x too.
+* dt[x]  # delete till first x found, but not delete x!
+
+Delete till next blank line:
+* d}
+
+Delete from previous blank line:
+* d{
+
+Check enclosing parenthesis:
+* %  # put cursor at starting or closing parenthesis, and then write this.
+
+Write from last insert position:
+* gi  # write at x pos, do something else, press this command, to resume writing from where you left earlier!
+
+jump sentences:
+* ()
+
+jump paragraphs:
+* {}
