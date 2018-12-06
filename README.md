@@ -1,5 +1,17 @@
-This repo is not for setting up vimrc, instead for starting with VIM.
+This repo is not for setting up vimrc, instead for starting with  [VIM](https://www.vim.org/).
 Commands that I have discovered and found quite useful so far through youtube tutorials, vimtutor, awesome vim are all shared here. Commands list will soon go beyond infinity! :rocket:
+<br/>
+<br/>
+
+--------
+readme instruction format:
+
+**Command for:**
+* `command`  # comment
+--------
+
+<br/>
+<br/>
 
 **quit:**
 * q!
