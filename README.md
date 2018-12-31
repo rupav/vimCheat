@@ -179,3 +179,5 @@ readme instruction format:
 <br/>
 
 ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [Autocompletion mode](http://georgebrock.github.io/talks/vim-completion/)
+
+[To Read](http://www.yolinux.com/TUTORIALS/LinuxTutorialAdvanced_vi.html)
