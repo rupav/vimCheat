@@ -69,7 +69,7 @@ readme instruction format:
 * yy # yank whole line, and similar to delete commands
 ---------
 **paste:**
-* p # p stands for p whatenver being copied or deleted recently.
+* p # p stands for p whatever being copied or deleted recently.
 ---------
 **Undo:**
 * u
