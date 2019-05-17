@@ -27,9 +27,12 @@ readme instruction format:
 ---------
 **end of line:**
 * $
+* A  # start in insert mode as well
 ---------
 **start of line:**
 * 0
+* ^
+* I  # start in insert mode as well.
 ---------
 **end of file:**
 * G
@@ -54,9 +57,10 @@ readme instruction format:
 * . 
 ---------
 **macro: # execute following in same order as given.**
-* :q[macro alphabet] # starts recording the macro, e.g. `:qa`
+* q[macro alphabet] # starts recording the macro, e.g. `:qa`
 * q # stops the current macro.
 * @[macro alphabet] # to execute the macro.
+* V [n]j :normal @[macro alphabet]  # to execute the macro on the 'n' consecytive lines.
 ---------
 **delete:**
 * x  # delete a character
@@ -70,6 +74,11 @@ readme instruction format:
 ---------
 **paste:**
 * p # p stands for p whatever being copied or deleted recently.
+* P # capital 'P' pastes above the current line.
+* viw p # paste the txt in register on a word (by replacing it), by first `visual insert word` command
+---------
+**Increment a number:**
+* ctrl+A
 ---------
 **Undo:**
 * u
@@ -84,6 +93,7 @@ readme instruction format:
 **append(insert mode):**
 * a
 * A # append from last character of current line.
+* I # insert from beginning of the line.
 ---------
 **replace:**
 * r[x] # where x is the new letter to substitute for current cursor character.
@@ -147,6 +157,15 @@ readme instruction format:
 **jump paragraphs:**
 * {}
 ---------
+**Change:**
+* c[a/i]w[[/{]  # changes inside **word**[[/{], change all word (include space next to it), changes will the word end. 
+---------
+**virtually select all inside:**
+* va["/[] or vi["/[]  # and then yank using y or change using c
+---------
+**Earlier - back to history!**
+* :earlier [n][m/s]  # n is number, go back to point of 2minutes/seconds earlier in the file say!
+---------
 **Store in register:**![#f03c15](https://placehold.it/15/f03c15/000000?text=+)
 * "[a]yy  # 'a' is register name, yy is yank the whole line into the register
 * "[a]p  # to paste anywhere the stored value in register a
@@ -179,5 +198,7 @@ readme instruction format:
 <br/>
 
 ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [Autocompletion mode](http://georgebrock.github.io/talks/vim-completion/)
+
+[vim+tmux - OMG!Code](https://www.youtube.com/watch?v=5r6yzFEXajQ)
 
 [To Read](http://www.yolinux.com/TUTORIALS/LinuxTutorialAdvanced_vi.html)
