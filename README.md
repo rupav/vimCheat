@@ -202,3 +202,10 @@ readme instruction format:
 [vim+tmux - OMG!Code](https://www.youtube.com/watch?v=5r6yzFEXajQ)
 
 [To Read](http://www.yolinux.com/TUTORIALS/LinuxTutorialAdvanced_vi.html)
+
+-------------------------------------------------------------------------
+
+**Vimium chrome Extension:**
+
+Select a text, select that line, yank it and search.
+v / [search pattern] ESC shift-0 y p[/P]
